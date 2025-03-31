@@ -1,17 +1,20 @@
 # Network Enumeration & Service Exploitation  
 
 ## Overview  
-This repository focuses on learning how to connect to various network services anonymously and use **Nmap** to identify open ports on a target system.  
+This machine focuses on learning how to connect to various network services anonymously and use **Nmap** to identify open ports on a target system.  
 We will explore the following services:  
 
-- **FTP** (File Transfer Protocol)  
-- **SMB** (Server Message Block)  
 - **Telnet**  
-- **Rsync**  
-- **RDP** (Remote Desktop Protocol)  
-- **MongoDB**  
 
 Additionally, we will learn how to use **Nmap** for scanning and enumeration.  
+
+## Tags
+
+- **Telnet**
+- **Protocols**
+- **Reconnaissance**
+- **Weak Credentials**
+- **Misconfiguarion**
 
 ---
 
