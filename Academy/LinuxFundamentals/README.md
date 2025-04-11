@@ -53,4 +53,8 @@ In this module, we will cover:
 | **Kernel**            | The core of the Linux operating system whose function is to virtualize and control common hardware resources like CPU, allocated memory, accessed data, and others. The kernel gives each process its own virtual resources and prevents/mitigates conflicts between different processes. |
 | **Shell**             | A command-line interface (CLI), also known as a shell, that a user can enter commands into to execute the kernel's functions.                                          |
 | **System Utility**    | Makes available to the user all of the operating system's functionality.                                                                                              |
+File System Hierarchy
 
+```
+/ ├── bin/ │ ├── bash │ └── ls ├── boot/ │ ├── grub/ │ └── vmlinuz ├── dev/ │ ├── sda │ └── tty ├── etc/ │ ├── passwd │ └── network/ ├── home/ │ ├── user1/ │ └── user2/ ├── lib/ │ ├── libc.so │ └── modules/ ├── media/ │ └── usb/ ├── mnt/ │ └── data/ ├── opt/ │ └── software/ ├── proc/ │ ├── cpuinfo │ └── meminfo ├── root/ │ └── .bashrc ├── run/ │ └── lock/ ├── sbin/ │ ├── shutdown │ └── init ├── srv/ │ └── www/ ├── sys/ │ └── fs/ └── usr/ ├── bin/ │ ├── python │ └── java ├── lib/ └── share/
+```
