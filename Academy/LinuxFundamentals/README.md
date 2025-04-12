@@ -119,3 +119,59 @@ In this module, we will cover:
 | **/tmp** | The operating system and many programs use this directory to store temporary files. This directory is generally cleared upon system boot and may be deleted at other times without any warning. |
 | **/usr** | Contains executables, libraries, man files, etc. |
 | **/var** | This directory contains variable data files such as log files, email inboxes, web application-related files, cron files, and more. |
+
+---
+
+# Linux Distributions
+
+Linux distributions — or distros — are operating systems based on the Linux kernel. They are used for various purposes, from servers and embedded devices to desktop computers and mobile phones.
+
+Linux distributions are like different branches or franchises of the same company, each tailored to serve specific markets or customer preferences. While they all share the same core components and structure (software packages and configurations), each Linux distribution is different, with its own set of features, packages, and tools.
+
+## Common Linux Distributions
+
+- Ubuntu  
+- Fedora  
+- CentOS  
+- Debian  
+- Red Hat Enterprise Linux  
+
+Many users choose Linux for desktop use because it is free, open-source, and highly customizable. Ubuntu and Fedora are popular choices for beginners. Linux is also widely used on servers due to its security, stability, and frequent updates.
+
+## Use Cases
+
+Linux distributions are used in a wide variety of environments:
+
+- Web servers  
+- Mobile devices  
+- Embedded systems  
+- Cloud computing  
+- Desktop computing  
+
+For cybersecurity specialists, some of the most popular Linux distributions include:
+
+| Distribution       | Notes                          |
+|--------------------|--------------------------------|
+| ParrotOS           | Security-focused               |
+| Ubuntu             | Beginner-friendly, versatile   |
+| Debian             | Stable and flexible             |
+| Raspberry Pi OS    | Lightweight, for Raspberry Pi  |
+| CentOS             | Server-focused (RHEL-based)    |
+| BackBox            | Pen-testing tools              |
+| BlackArch          | Large number of hacking tools  |
+| Pentoo             | Based on Gentoo, security tools|
+
+> **Note:** Kali Linux is the most popular Linux distribution for cybersecurity professionals, offering a wide range of security-focused tools and packages.
+
+---
+
+## Debian
+
+Debian is a widely used and well-respected Linux distribution known for its stability and reliability. It's used for various purposes including desktops, servers, and embedded systems.
+
+- Uses the **APT** (Advanced Package Tool) for package management  
+- Known for **long-term support releases** (up to 5 years)  
+- Offers flexibility and customization  
+- Excellent for **advanced users** who want control over their system  
+
+Debian may have a steeper learning curve, but its strength lies in its rock-solid reliability and wide compatibility with other Linux-based systems.
