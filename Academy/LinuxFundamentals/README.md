@@ -1,3 +1,9 @@
+# Linux Fundamentals
+
+**Tags**: `tier 0`, `fundamental`, `general`  
+**Sections**: 30  
+**Duration**: 6 hours  
+
 ## Table of Contents
 
 - [Overview](#overview)
@@ -10,12 +16,6 @@
 - [Introduction to Shell](#introduction-to-shell)
 - [Terminal Emulators](#terminal-emulators)
 - [Shell](#shell)
-
-# Linux Fundamentals
-
-**Tags**: `tier 0`, `fundamental`, `general`  
-**Sections**: 30  
-**Duration**: 6 hours  
 
 ## Overview
 
