@@ -16,6 +16,9 @@
 - [Introduction to Shell](#introduction-to-shell)
 - [Terminal Emulators](#terminal-emulators)
 - [Shell](#shell)
+- [Bash Prompt and PS1 Customization](#Bash-Prompt-and-PS1-Customization)
+- [Common Special Characters for PS1](#Common-Special-Characters-for-PS1)
+
 
 ## Overview
 
