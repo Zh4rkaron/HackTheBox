@@ -273,7 +273,6 @@ You can customize your prompt in the `.bashrc` file (usually located in your hom
 
 ### Example PS1 Format
 
-```bash
 PS1="\u@\h[\w]\$ "
 
 This results in a prompt like:
