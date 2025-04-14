@@ -223,3 +223,89 @@ Besides Bash, other available shells include:
 - `Fish` (Friendly Interactive Shell)
 
 Each shell offers unique features and syntax styles, catering to different user preferences and workflows.
+
+---
+
+# Bash Prompt and PS1 Customization
+
+## What is the Bash Prompt?
+
+The Bash prompt is the line of text that appears in the terminal, letting you know that the system is ready to receive commands. By default, it shows useful information such as:
+
+- 👤 Your **username**
+- 💻 Your **hostname** (your computer’s name)
+- 📁 The **current working directory**
+
+The prompt typically appears like this:
+
+```
+<username>@<hostname><current working directory>$
+```
+
+For example, if you're in your home directory, you'll see the tilde symbol (`~`) which represents the home folder:
+
+```
+daron@linuxbox[~]$
+```
+
+- The **`$`** symbol indicates a regular user.
+- When logged in as **root**, the prompt changes to use the **`#`** symbol:
+
+```
+root@htb[/htb]#
+```
+
+---
+
+
+---
+
+## The PS1 Variable
+
+The **`PS1`** variable defines the appearance of your command prompt. It acts like a template, and you can configure it to display more than just your username and directory. Common customizations include:
+
+- IP address
+- Date and time
+- Success or failure of the last command
+- Shell name and job count
+
+You can customize your prompt in the `.bashrc` file (usually located in your home directory).
+
+### Example PS1 Format
+
+```bash
+PS1="\u@\h[\w]\$ "
+
+This results in a prompt like:
+
+```
+daron@linuxbox[~/projects]$ 
+```
+
+### Common Special Characters for PS1
+
+| Character        | Description                              |
+|------------------|------------------------------------------|
+| `\u`             | Current username                         |
+| `\h`             | Hostname (up to the first `.`)           |
+| `\H`             | Full hostname                            |
+| `\w`             | Full path of the current directory       |
+| `\W`             | Base name of the current directory       |
+| `\d`             | Date (e.g., Mon Apr 14)                  |
+| `\D{%Y-%m-%d}`   | Custom date format (e.g., 2025-04-12)    |
+| `\t`             | Current time (24-hour format, HH:MM:SS)  |
+| `\T`             | Current time (12-hour format, HH:MM:SS)  |
+| `\@`             | Current time (12-hour format with am/pm) |
+| `\s`             | Shell name                               |
+| `\j`             | Number of jobs running in background     |
+| `\n`             | Newline                                  |
+| `\r`             |
+
+## Why Customize the Prompt?
+
+Customizing your prompt improves usability and provides helpful, at-a-glance information while working in the terminal. Benefits include:
+
+- 🧠 Quickly identifying which user or system you're on
+- 🕐 Seeing timestamps for commands
+- ⚠️ Knowing when a command fails
+- 🎯 Enhancing productivity and clarity in scripts or logs
