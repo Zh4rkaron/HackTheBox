@@ -301,7 +301,8 @@ daron@linuxbox[~/projects]$
 | `\s`             | Shell name                               |
 | `\j`             | Number of jobs running in background     |
 | `\n`             | Newline                                  |
-| `\r`             |
+| `\r`             | Carriage return                          |
+| `\$`             | `$` for users, `#` for root              |
 
 ## Why Customize the Prompt?
 
