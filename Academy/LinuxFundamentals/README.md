@@ -18,7 +18,9 @@
 - [Shell](#shell)
 - [Bash Prompt and PS1 Customization](#Bash-Prompt-and-PS1-Customization)
 - [Common Special Characters for PS1](#Common-Special-Characters-for-PS1)
-
+- [Getting Help](#Getting-help)
+- [System Information](#System-Information)
+- [logging in via SSH](#logging-in-via-SSH)
 
 ## Overview
 
@@ -444,3 +446,25 @@ sudoreplay (8)       - replay sudo session logs
 visudo (8)           - edit the sudoers file
 ```
 
+## System Information
+Bellow is a list of essential tools to help gather information about system details, processes, network configuration, user/user settings, and directories. It also plays a key role when assessing security configuration, identifiying vulnerabilties, or preventing potential security risks in Linux operating systems.
+
+| Command  | Description                                                                                                                  |
+|----------|------------------------------------------------------------------------------------------------------------------------------|
+| whoami   | Displays current username.                                                                                                   |
+| id       | Returns users identify                                                                                                       |
+| hostname | Sets or prints the name of current host system.                                                                              |
+| uname    | Prints basic information about the operating system name and system hardware.                                                |
+| pwd      | Returns working directory name.                                                                                              |
+| ifconfig | The config utility is used to assign or view in addres to a network interface and/or configure network interface parameters. |
+| netstat  | Shows network status.                                                                                                        |
+| ss       | Another utility to investigate sockets.                                                                                      |
+| ps       | Shows process status.                                                                                                        |
+| who      | Displays who is logged in.                                                                                                   |
+| env      | Prints environment or sets and executes command.                                                                             |
+| lsblk    | Lists block devices.                                                                                                         |
+| lsusb    | Lists USB devices.                                                                                                           |
+| lsof     | Lists opened files.                                                                                                          |
+| lspci    | Lists PCI devices.                                                                                                           |
+
+## logging in via SSH
