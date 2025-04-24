@@ -576,4 +576,5 @@ Through a bit tedious, we can learn much from studying the manpages for common c
 
 ## Questions
 
-
+### Question 1: Find out the machine hardware name and submit it as the answer. 
+**x86_64**
