@@ -748,3 +748,137 @@ cry0l1t3@htb[/dev]$ cd shm && clear
 ### Question 2: What is the index number of the "sudoers" file in the "/etc" directory? 
 
 **147627** To find the index number you have to run the command **ls -i /etc/sudoers**
+
+## Working with Files and Directories
+The primary difference between working with files in Linux, as opposed to Windows, lies in how we access and manage those files. In Windows, we typically use graphical tools like Explorer to find, open, and edit files. However, in Linux, the terminal offers a powerful alternative where files can be accessed and edited directlry using commands. This method is not only faster, but also more efficient, as it allows you to edit files interactively even needing editors like **vim** or **nano**.
+
+## Create, Move, and Copy
+
+Let us begin by learning how to perform key operations like creating, renaming, moving, copying, and deleting files. Before we execute the following commands, we first need to SSH into the target. Now, lets say we want to create a new file or directory. The syntax for this is the following:
+
+## Syntax-touch
+
+```
+zharkaron@htb[/htb]$ touch <name>
+```
+
+## Syntax-mkdir
+
+```
+zharkaron@htb[/htb]$ mkdir <name>
+```
+
+In the next example, we will create a file called **info.txt** and a directory called **storage**. To create these, we follow the commands and their syntax as shown above.
+
+## Create an Empty File
+
+```
+zharkaron@htb[/htb]$ touch info.txt
+```
+
+### Create a Directory
+
+```
+zharkaron@htb[/htb]$ mkdir Storage
+```
+
+When organizing your system, you may need to create multiple directories within other directories. Manually running the **mkdir** command for each one would be time-consuming. Fortunately, the mkdir command has the **-p** (parents) option, which allows you to create parent directory automatically.
+
+```
+zharkaron@htb[/htb]$ mkdir -p Storage/local/user/documents
+```
+We can look at the whole structure after creating the parent directries with the tool **tree**.
+
+```
+zharkaron@htb[/htb]$ tree .
+
+.
+├── info.txt
+└── Storage
+    └── local
+        └── user
+            └── documents
+
+4 directories, 1 file
+```
+
+with the command **mv**, we can move and also rename files and directories. The syntax for this looks like this:
+## Syntax - mv
+```
+zharkaron@htb[/htb]$ mv <file/directory> <renamed file/directory>
+```
+
+First, let us rename the file **info.txt** to **information.txt** and then move it to the directory **storage**.
+
+## Rename File
+
+```
+zharkaron@htb[/htb]$ mv info.txt information.txt
+```
+
+Now let us create a file named **readme.txt** in the current directory and then copy the files **information.txt** and **readme.txt** into the **Storage/** directory.
+
+## Create readme.txt
+
+```
+zharkaron@htb[/htb]$ touch readme.txt
+```
+
+## Move Files to specific Directory
+
+```
+zharkaron@htb[/htb]$ mv information.txt readme.txt Storage/
+```
+
+```
+zharkaron@htb[/htb]$ tree .
+
+.
+└── Storage
+    ├── information.txt
+    ├── local
+    │   └── user
+    │       ├── documents
+    │       └── userinfo.txt
+    └── readme.txt
+
+4 directories, 3 files
+```
+
+Let us assume we want to have the **readme.txt** in the **local/** directory. Then we can copy them there with the paths specified.
+
+## Copy readme.txt
+
+```
+zharkaron@htb[/htb]$ cp Storage/readme.txt Storage/local/
+```
+
+Now we can check if the file is thereby using the tool **tree** again.
+
+```
+zharkaron@htb[/htb]$ tree .
+
+.
+└── Storage
+    ├── information.txt
+    ├── local
+    │   ├── readme.txt
+    │   └── user
+    │       ├── documents
+    │       └── userinfo.txt
+    └── readme.txt
+
+4 directories, 4 files
+```
+In addition to basic file management commands, there are many other powerful ways to work with files in Linux, such as usingn redirection and text editors. Redirection allows you to manipulate the flow of input and output between commands and files, making tasks like creating or modifying files faster and more efficient. You can also use popular text editors like vim and nane for more interactive editing.
+
+## Questions
+
+### Question 1:  What is the name of the last modified file in the "/var/backups" directory? 
+**apt.extended_states.0**  To list files that show the last modified files at the top your going to use the command **ls -lt** 
+
+### Question 2: What is the inode number of the "shadow.bak" file in the "/var/backups" directory? 
+**265293**  Your gonna have to run the command **ls -i** to find the inode of the file
+
+
+
