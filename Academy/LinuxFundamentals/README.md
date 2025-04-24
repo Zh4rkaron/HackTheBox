@@ -21,6 +21,7 @@
 - [Getting Help](#Getting-help)
 - [System Information](#System-Information)
 - [logging in via SSH](#logging-in-via-SSH)
+- [Linux Exercises](#Linux-Exercises)
 
 ## Overview
 
@@ -577,4 +578,39 @@ Through a bit tedious, we can learn much from studying the manpages for common c
 ## Questions
 
 ### Question 1: Find out the machine hardware name and submit it as the answer. 
-**x86_64**
+**x86_64**  
+To find out whether your system is 32-bit or 64-bit (and what CPU architecture it uses), You use the command **uname -m ** This command prints the machine hardware name — a shorthand for your system's architecture.
+
+---
+
+### Question 2: What is the path to htb-student's home directory? 
+
+**/home/htb-student** To find out where you are in the file system, use the **pwd** command
+
+---
+
+### Question 3: What is the path to the htb-student's mail?
+
+**/var/mail/htb-student** To check if your user has a mail file, run ** ls /var/mail** This will list all mail files for users. If you see htb-student, it means your system is storing local mail for that user.
+
+---
+
+### Question 4: Which shell is specified for the htb-student user?
+
+**/bin/bash** To find out which shell is currently running in your terminal, use the following command: **echo $SHELL**
+
+---
+
+### Question 5: Which kernel release is installed on the system? (Format: 1.22.3) 
+
+**4.15.0** To check your kernel version, run **uname -r**
+
+---
+
+### Question 6:  What is the name of the network interface that MTU is set to 1500? 
+
+**ens192** To view all network interfaces on your system, use the ip command **ip a**
+
+---
+
+## Navigation
