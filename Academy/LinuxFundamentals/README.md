@@ -880,5 +880,79 @@ In addition to basic file management commands, there are many other powerful way
 ### Question 2: What is the inode number of the "shadow.bak" file in the "/var/backups" directory? 
 **265293**  Your gonna have to run the command **ls -i** to find the inode of the file
 
+## Editing Files
+
+After learning how to create files and directories, let's move on to working with these files. There are several ways to edit a file in Linux, with some of the most common text editors being **vi** and **Vim**. However, we will start with the **Nano editor, which is less commonly used to easier to understand.
+
+To create and edit a file using Nano, you can specify the file name directly as the first parameter when launching the editor. For example to create and open a new file named **notes.txt**, you would use the foolowing command:
+
+``` 
+zharkaron@htb[/htb]$ nano notes.txt
+```
+
+This command will open the Nano editor, allowing you to start editing the files note.txt immediately. Nano's straightforward interface (also called "**pager**) makes it a great choice for quickly editing text files, especially when your just getting started.
+
+## Nano Editor
+
+```
+GNU nano 2.9.3                                    notes.txt                                              
+
+Here we can type everything we want and make our notes.▓
+
+
+^G Get Help    ^O Write Out   ^W Where Is    ^K Cut Text    ^J Justify     ^C Cur Pos     M-U Undo
+^X Exit        ^R Read File   ^\ Replace     ^U Uncut Text  ^T To Spell    ^_ Go To Line  M-E Redo
+```
+
+Below we see two lines with short descriptions. The **caret**(**^**) stands for our "**[CTRL]**" key. For example, if we press **[CTRL + W]**, a "**Search:**" line appears at the bottom of the editor, where we can enter the word or words we are looking for. If we now search for the word "**we**" and press **[ENTER]** without any additional information. 
+
+```
+GNU nano 2.9.3                                    notes.txt                                              
+
+Here ▓we can type everything we want and make our notes.
+
+Search:   notes                                                                                            
+^G Get Help    M-C Case Sens  M-B Backwards  M-J FullJstify ^W Beg of Par  ^Y First Line  ^P PrevHstory
+^C Cancel      M-R Regexp     ^R Replace     ^T Go To Line  ^O End of Par  ^V Last Line   ^N NextHstory
+```
+
+To jump to the next match with the cursor, we press **[CTRL + W]** again and confirm with **[ENTER]** without any additional information.
+
+```
+GNU nano 2.9.3                                    notes.txt                                              
+
+Here we can type everything ▓we want and make our notes.
+
+Search [we]:                                                                                               
+^G Get Help    M-C Case Sens  M-B Backwards  M-J FullJstify ^W Beg of Par  ^Y First Line  ^P PrevHstory
+^C Cancel      M-R Regexp     ^R Replace     ^T Go To Line  ^O End of Par  ^V Last Line   ^N NextHstory
+```
+
+Now we can save the file by pressing **[CTRL + 0]** and confirm the file name with **[ENTER]**.
+
+```
+GNU nano 2.9.3                                    notes.txt                                              
+
+Here we can type everything we want and make our notes.
+
+File Name to Write: notes.txt▓                                                                           
+^G Get Help    M-C Case Sens  M-B Backwards  M-J FullJstify ^W Beg of Par  ^Y First Line  ^P PrevHstory
+^C Cancel      M-R Regexp     ^R Replace     ^T Go To Line  ^O End of Par  ^V Last Line   ^N NextHstory
+```
+
+After we have saved the file, we can leave the editor with **[CTRL + X]**.
+## Back on the Shell
+
+To view the contents of the file, we can use the command **cat**.
+
+```
+zharkaron@htb[/htb]$ cat notes.txt
+
+Here we can type everything we want and make our notes.
+```
+
+On Linux systems, there are several files that can be tremendously beneficial for penetration testers, due to misconfigured permissions or insufficient security settings by the administrators. One such important file is the **/etc/passwd** file. This file contains essential infomration about the users on the system, such as their usernames, user IDs(**UIDs**), group IDs(**GIDs**), and home directories. 
+
+## VIM
 
 
